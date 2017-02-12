@@ -1,0 +1,33 @@
+body {
+  background-color: #bdbdbd;
+  padding-top: 10px;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+header {
+  display: flex;
+  padding-bottom: 30px;
+  padding-top: 20px;
+}
+header .logo-header {
+  display: flex;
+  margin: 0 auto;
+}
+/*header .logo-header img {
+  width: 500px;
+  height: auto;
+}*/
+.gallery ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.box {
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  border: 10px white solid;
+}
