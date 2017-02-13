@@ -14,9 +14,11 @@ $.ajax({
 
 function jsonFlickrApi(data) {
   console.info(data);
+  var kittyPics = '<ul>'
   data.photos.photo.forEach(function (cat) {
-    // var img = document.createElement('img');
-    // img.src = cat.url_m;
-    // document.body.appendChild(img);
+    kittyPics += '<li class="box">';
+    kittyPics += '<img src="' + cat.url_m + '"/></li>';
   });
+  kittyPics += '</ul>'
+  $('.gallery').html(kittyPics);
 }
