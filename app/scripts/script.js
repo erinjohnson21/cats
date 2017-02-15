@@ -17,8 +17,41 @@ function jsonFlickrApi(data) {
   var kittyPics = '<ul>'
   data.photos.photo.forEach(function (cat) {
     kittyPics += '<li class="box">';
-    kittyPics += '<img src="' + cat.url_m + '"/></li>';
+    kittyPics += '<img src="' + cat.url_m + '" class="images"/></li>';
   });
   kittyPics += '</ul>'
   $('.gallery').html(kittyPics);
+
+
+  //offset photos so they are more centered
+  //I know this is probably wrong but it's a start
+  // var width = document.getElementsByClassName('images').width;
+  // var height = document.getElementsByClassName('images').height;
+  // function offsets () {
+  //   if (width >= 500) {
+  //     offsetX = width/2;
+  //   } else if (height >= 500) {
+  //     offsetY = height/2;
+  //   }
+  // }
+
+
+  //loop through each page?
+  //move these into their own functions
+  var pageNum = data.photos.page;
+  console.log(data.photos.pages)
+  $('#right-btn').click(function() {
+    if(pageNum !== data.photos.pages) {
+      //move to the next page
+      pageNum += 1;
+      console.log(pageNum);
+    }
+  });
+  $('#left-btn').click(function() {
+    if(pageNum !== 1) {
+      //move to the previous page
+      pageNum -= 1;
+      console.log(pageNum);
+    }
+  });
 }
