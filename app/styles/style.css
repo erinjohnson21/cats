@@ -35,7 +35,6 @@ header .logo-header img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  background: center center;
 }
 .box {
   width: 400px;
@@ -60,6 +59,9 @@ footer {
   opacity: .5;
   float: right;
   padding: 20px;
+}
+.fa:hover {
+  opacity: 1;
 }
 .left-buttons {
   float: left;
