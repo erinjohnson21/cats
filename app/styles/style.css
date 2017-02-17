@@ -26,17 +26,17 @@ header .logo-header img {
   padding: 20px;
 }
 .gallery {
-  display: block;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 20px;
+  display: flex;
 }
-.gallery ul {
+.gallery .list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding-bottom: 20px;
 }
 .box {
+  display: flex;
+  justify-content: center;
   width: 400px;
   height: 400px;
   overflow: hidden;
@@ -44,8 +44,10 @@ header .logo-header img {
   border: 10px white solid;
 }
 .box img {
+  flex: 2;
+  /*min-width: 100%;*/
   min-height: 100%;
-  min-width: 100%;
+  align-self: center;
 }
 .btn {
   padding: 15px;
@@ -65,4 +67,17 @@ footer {
 }
 .left-buttons {
   float: left;
+}
+
+@media (max-width:380px) {
+  body {
+    padding: 10px;
+  }
+  .box {
+    width: 275px;
+    height: 275px;
+  }
+  .right-buttons {
+    display: none;
+  }
 }

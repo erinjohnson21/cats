@@ -14,12 +14,12 @@ $.ajax({
 
 function jsonFlickrApi(data) {
   console.info(data);
-  var kittyPics = '<ul>'
+  var kittyPics = '<div class="list">'
   data.photos.photo.forEach(function (cat) {
-    kittyPics += '<li class="box">';
-    kittyPics += '<img src="' + cat.url_m + '" class="images"/></li>';
+    kittyPics += '<div class="box">';
+    kittyPics += '<img src="' + cat.url_m + '" class="images"/></div>';
   });
-  kittyPics += '</ul>'
+  kittyPics += '</div>'
   $('.gallery').html(kittyPics);
 
 
