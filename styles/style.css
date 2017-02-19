@@ -44,7 +44,7 @@ header .logo-header img {
   border: 10px white solid;
 }
 .box img {
-  flex: 2;
+  flex: 1 1 0;
   /*min-width: 100%;*/
   min-height: 100%;
   align-self: center;
