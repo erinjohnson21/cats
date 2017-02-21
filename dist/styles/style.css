@@ -32,22 +32,26 @@ header .logo-header img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding-bottom: 20px;
 }
 .box {
-  display: flex;
-  justify-content: center;
   width: 400px;
   height: 400px;
   overflow: hidden;
   margin-bottom: 20px;
   border: 10px white solid;
+  position: relative;
 }
-.box img {
-  flex: 1 1 0;
-  /*min-width: 100%;*/
+.images {
+  /*min-width: 100%;
+  min-height: 100%;*/
+  position: absolute;
+  left: -1000%;
+  right: -1000%;
+  top: -1000%;
+  bottom: -1000%;
+  margin: auto;
   min-height: 100%;
-  align-self: center;
+  min-width: 100%;
 }
 .btn {
   padding: 15px;
@@ -76,6 +80,9 @@ footer {
   .box {
     width: 275px;
     height: 275px;
+  }
+  .box img {
+    min-width: 100%;
   }
   .right-buttons {
     display: none;

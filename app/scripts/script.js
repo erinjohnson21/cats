@@ -18,7 +18,7 @@ function jsonFlickrApi(data) {
   var kittyPics = '<div class="list">'
   data.photos.photo.forEach(function (cat) {
     kittyPics += '<div class="box">';
-    kittyPics += '<img src="' + cat.url_m + '" class="images"/></div>';
+    kittyPics += '<div><img src="' + cat.url_m + '" class="images"/></div></div>';
   });
   kittyPics += '</div>'
   $('.gallery').html(kittyPics);
