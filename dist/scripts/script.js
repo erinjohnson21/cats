@@ -8,7 +8,7 @@ $.ajax({
     tag_mode : 'all',
     safe_search: 1,
     content_type: 1,
-    per_page: 32,
+    per_page: 20,
   },
   jsonp: 'jsonFlickrApi',
 });
@@ -36,7 +36,7 @@ function jsonFlickrApi(data) {
           tag_mode : 'all',
           safe_search: 1,
           content_type: 1,
-          per_page: 32,
+          per_page: 20,
           page: pageNum
         },
         jsonp: 'jsonFlickrApi',
@@ -55,7 +55,7 @@ function jsonFlickrApi(data) {
           tag_mode : 'all',
           safe_search: 1,
           content_type: 1,
-          per_page: 32,
+          per_page: 20,
           page: pageNum
         },
         jsonp: 'jsonFlickrApi',
