@@ -17,6 +17,7 @@ header {
   display: flex;
   padding-bottom: 30px;
   padding-top: 20px;
+  flex-direction: column;
 }
 header .logo-header {
   margin: 0 auto;
@@ -24,6 +25,20 @@ header .logo-header {
 header .logo-header img {
   max-width: 100%;
   padding: 20px;
+}
+header .share-links {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -10px;
+}
+header .share-links a i {
+  color: white;
+  font-size: 20px;
+  opacity: .5;
+  padding: 15px;
+}
+header .share-links a i:hover {
+  opacity: 1;
 }
 .gallery {
   display: flex;
@@ -59,18 +74,24 @@ header .logo-header img {
 footer {
   padding: 10px 50px 50px 50px;
 }
-.fa {
+.right-buttons .fa {
   color: white;
   font-size: 50px;
   opacity: .5;
   float: right;
   padding: 20px;
 }
-.fa:hover {
+.right-buttons .fa:hover,
+.left-buttons .fa:hover {
   opacity: 1;
 }
-.left-buttons {
-  float: left;
+.left-buttons .fa{
+    color: white;
+    font-size: 50px;
+    opacity: .5;
+    float: left;
+    padding: 20px;
+  }
 }
 
 @media (max-width:380px) {
